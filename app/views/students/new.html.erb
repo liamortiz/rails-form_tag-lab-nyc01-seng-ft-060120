@@ -1,2 +1,6 @@
-<%= form_tag(student_path) %>
-  <%= text_field_tag :'students[:name]' %>
+<%= form_tag(student_path) do %>
+  <%= text_field_tag :'students[:first_name]' %>
+  <%= text_field_tag :'students[:last_name]' %>
+  
+  <%= submit_tag 'Submit' %>
+<% end %>
